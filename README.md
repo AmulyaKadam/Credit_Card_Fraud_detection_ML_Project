@@ -101,7 +101,7 @@ The dataset is severely imbalanced — only **492 fraud cases out of 284,807 tra
 
 ![Class Imbalance](./Images/class_imbalance.png)
 
-👉 **Business Insight:**  
+### 👉 **Business Insight:**  
 The extremely low fraud rate (0.17%) means traditional accuracy is misleading.  
 The focus must be on **precision (reducing false alerts)** and **recall (catching frauds)**.
 
