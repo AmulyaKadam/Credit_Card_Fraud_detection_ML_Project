@@ -182,6 +182,10 @@ LightGBM achieves only **10 false positives** vs. EasyEnsemble's 1,379 — a 138
 
 ![Confusion Matrix Comparison](./Images/Confusion_Matrix_Comparison.png)
 
+### 👉 **Business Impact:**  
+
+Reducing false positives from 1,379 to just 10 significantly lowers unnecessary transaction blocks and improves customer trust.
+
 ---
 
 ## 🏆 Final Model: LightGBM (Tuned)
@@ -233,6 +237,14 @@ LightGBM out-of-the-box delivers dramatically better results — only **8 false 
 ---
 
 ### Threshold Tuning
+
+### 👉 **Business Insight:**  
+
+Threshold tuning allows businesses to control the trade-off between:
+- Catching more fraud (higher recall)
+- Avoiding false alarms (higher precision)
+
+This makes the system adaptable to different risk strategies.
 
 The default decision threshold (0.5) was replaced with a **custom threshold of 0.37**, identified via Precision-Recall curve analysis. Lowering the threshold increases fraud recall at the cost of a marginal increase in false positives — the optimal trade-off for this use case.
 
@@ -364,6 +376,9 @@ pip install -r requirements.txt
 ```bash
 streamlit run app/app.py
 ```
+## 👉 **Business Value:**  
+
+Acts as a decision-support tool for fraud analysts by enabling real-time risk scoring and prioritization of suspicious transactions.
 
 6. **Use the App**
 
