@@ -102,6 +102,7 @@ The dataset is severely imbalanced — only **492 fraud cases out of 284,807 tra
 ![Class Imbalance](./Images/class_imbalance.png)
 
 ### 👉 **Business Insight:**  
+
 The extremely low fraud rate (0.17%) means traditional accuracy is misleading.  
 The focus must be on **precision (reducing false alerts)** and **recall (catching frauds)**.
 
@@ -110,6 +111,11 @@ The focus must be on **precision (reducing false alerts)** and **recall (catchin
 Fraudulent transactions tend to cluster at **lower transaction amounts** compared to legitimate ones, as visible in both the boxplot and KDE comparison. Legitimate transactions show a much wider spread with large outliers up to $25,000+.
 
 ![Transaction Amount Distribution](./Images/amount_distribution.png)
+
+### 👉 **Business Insight:**  
+
+Fraud transactions tend to occur at lower amounts, indicating potential testing behavior by fraudsters.  
+This can help in designing **early-stage fraud detection rules**.
 
 ### Feature Correlation with Fraud Label
 
