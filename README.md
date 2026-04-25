@@ -1,6 +1,13 @@
 # 🛡️ Credit Card Fraud Detection ML Project (FraudSentinel)
 
-This project demonstrates an **end-to-end Machine Learning pipeline** for detecting fraudulent credit card transactions. It addresses one of the most challenging real-world problems in financial ML — extreme class imbalance — using **LightGBM with calibrated probabilities and custom threshold tuning**, and wraps the final model in a production-ready **Streamlit frontend called FraudSentinel**.
+This project demonstrates an **end-to-end Machine Learning pipeline** for detecting fraudulent credit card transactions.
+
+From a business perspective, the goal is to:
+- Reduce **financial losses due to fraud**
+- Minimize **false alerts that disrupt genuine customers**
+- Enable **risk-based transaction monitoring and prioritization**
+
+The project addresses extreme class imbalance using **LightGBM with calibrated probabilities and custom threshold tuning**, and deploys a production-ready **Streamlit application (FraudSentinel)** for real-time fraud analysis.
 
 ---
 
@@ -93,6 +100,10 @@ The dataset is severely imbalanced — only **492 fraud cases out of 284,807 tra
 | Imbalance Ratio | 578 : 1 |
 
 ![Class Imbalance](./Images/class_imbalance.png)
+
+👉 **Business Insight:**  
+The extremely low fraud rate (0.17%) means traditional accuracy is misleading.  
+The focus must be on **precision (reducing false alerts)** and **recall (catching frauds)**.
 
 ### Transaction Amount Distribution
 
