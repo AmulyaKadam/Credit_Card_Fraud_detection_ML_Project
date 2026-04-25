@@ -123,6 +123,10 @@ Features **V17 (−0.326), V14 (−0.303), V12 (−0.261), V10 (−0.217)** show
 
 ![Feature Correlation with Fraud Label](./Images/class_correlation.png)
 
+### 👉 **Business Insight:**  
+
+Highly correlated features can act as strong fraud indicators and help prioritize suspicious transactions for investigation.
+
 ### Clustered Correlation Heatmap
 
 The clustered heatmap of all 30 features (V1–V28, Time, Amount) confirms that most PCA components are near-orthogonal by design, with a few notable inter-correlations — most prominently **V2 and Amount (−0.53)** and **V7 and V5 (+0.40)**.
@@ -152,6 +156,11 @@ LightGBM achieves the **best overall balance** across PR-AUC, Precision, and F1,
 | **F1 Score** | 0.0795 | **0.8600** ✅ | 0.8500 |
 | **False Negatives (FN)** | 7 | 17 | 15 |
 | **False Positives (FP)** | 1,379 | **10** ✅ | 14 |
+
+### 👉 **Business Interpretation:**  
+
+- High recall models (like EasyEnsemble) detect more fraud but create excessive false alerts  
+- LightGBM provides the best balance, making it suitable for real-world deployment where customer experience matters
 
 > ✅ **LightGBM selected as final model** — best PR-AUC (0.8719), highest precision (0.89), and lowest false positives (10).
 
