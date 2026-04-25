@@ -275,7 +275,9 @@ With threshold = 0.37, the tuned model correctly identifies **82 out of 98 fraud
 
 ![FraudSentinel Frontend](./Images/Front_end.PNG)
 
-**FraudSentinel** is a production-style Streamlit web application built around the trained and calibrated LightGBM model. It offers real-time fraud detection with an intuitive dark-themed interface.
+## 👉 **Business Value:**  
+
+Acts as a decision-support tool for fraud analysts by enabling real-time risk scoring and prioritization of suspicious transactions.
 
 FraudSentinel is used to:
 
@@ -376,9 +378,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app/app.py
 ```
-## 👉 **Business Value:**  
-
-Acts as a decision-support tool for fraud analysts by enabling real-time risk scoring and prioritization of suspicious transactions.
 
 6. **Use the App**
 
